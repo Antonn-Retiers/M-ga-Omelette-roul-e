@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Méga Omelette Roulée</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- Barre de navigation -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="sources.html">Sources</a></li>
+        </ul>
+    </nav>
+	
+    <div class="container">
+        <h1>Méga Omelette Roulée</h1>
+        <div class="controls">
+            <label for="servings">Nombre de gourmands :</label>
+            <select id="servings" onchange="updateRecipe()"> <!--Ecouteur d'évènement-->
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <div class="recipe">
+            <h2>Ingrédients</h2>
+            <ul>
+                <li><span id="eggs">4</span> œufs</li>
+                <li><span id="milk">50</span> ml de lait</li>
+                <li><span id="cheese">30</span> g de fromage râpé</li>
+				<li><span id="lardon">150</span> g de lardons</li>
+                <li>Sel et poivre</li>
+                <li>Herbes de Provence (optionnel)</li>
+            </ul>
+
+            <h2>Instructions</h2>
+            <ol>
+                <li>Battez les œufs avec le lait, sel et poivre.</li>
+                <li>Faites chauffer une poêle antiadhésive.</li>
+                <li>Faites chauffer les lardons dans une casserole à part.</li>
+                <li>Verser la préparation et parsemez de fromage et de lardons.</li>
+                <li>Cuisez à feu moyen jusqu'à consistance souhaitée.</li>
+                <li>Roulez l'omelette avec une spatule et servez.</li>
+            </ol>
+            <h3>Bon appétit !</h3>
+        </div>
+    </div>
+
+	<div class="container2">
+		<img src="méga omelette roulé.webp" class=image/>
+		<img src="omelette roulé.webp" class=image/>
+	</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
